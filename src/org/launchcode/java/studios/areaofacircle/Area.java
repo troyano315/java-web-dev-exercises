@@ -15,18 +15,13 @@ public class Area {
 
 
         System.out.println("Please enter the radius of the circle.");
+
+
         radiusOfCircle = input.nextDouble();
 
-        try {
-            //  Block of code to try
-        }
-        catch(Exception e) {
-            //  Block of code to handle errors
-        }
 
 
-
-        while (radiusOfCircle < 0) {
+        while (radiusOfCircle < 0 || radiusOfCircle.isNaN()) {
             System.out.println("Please enter a positive number.");
             radiusOfCircle = input.nextDouble();
             break;
